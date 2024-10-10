@@ -12,7 +12,7 @@ export default function CategoryList() {
     <div className="bg-white">
       <div>
         <div className="flex flex-col gap-2 items-center">
-          <h1 className="text-[#1A1919] text-5xl font-bild">
+          <h1 className="text-[#1A1919] text-5xl font-bold">
             Job Category List
           </h1>
           <p className="mt-4">
@@ -21,7 +21,7 @@ export default function CategoryList() {
           </p>
         </div>
 
-        <div className="flex gap-10  m-60 p-5">
+        <div className=" bg-white flex gap-10 justify-between mt-10  mx-60 p-5 ">
           {categories.map((categorie, index) => (
             <Categorie key={index} categorie={categorie} />
           ))}
